@@ -1,0 +1,162 @@
+{
+    "1": {
+        "hyperparameters": {
+            "optimizer": "Adam ",
+            "loss-function": "BCELoss",
+            "epochs": 40,
+            "batch-size": 128,
+            "disc-lr": 0.001,
+            "gen-lr": 0.001,
+            "disc-lr-decay": 0,
+            "gen-lr-decay": 0,
+            "lr-decay-period": 4,
+            "linear-gaussian-noise-range": [
+                0.5,
+                0.01
+            ]
+        },
+        "generated-images-folder": "generated_images/1",
+        "plots": "plots/1.png",
+        "models": "models/1"
+    },
+    "2": {
+        "hyperparameters": {
+            "optimizer": "Adam ",
+            "loss-function": "BCELoss",
+            "epochs": 40,
+            "batch-size": 256,
+            "disc-lr": 0.0005,
+            "gen-lr": 0.0005,
+            "disc-lr-decay": 0,
+            "gen-lr-decay": 0,
+            "lr-decay-period": 4,
+            "linear-gaussian-noise-range": [
+                0.5,
+                0.05
+            ]
+        },
+        "generated-images-folder": "generated_images/2",
+        "plots": "plots/2.png",
+        "models": "models/2"
+    },
+    "3": {
+        "hyperparameters": {
+            "optimizer": "Adam ",
+            "loss-function": "BCELoss",
+            "epochs": 40,
+            "batch-size": 256,
+            "disc-lr": 0.00075,
+            "gen-lr": 0.00075,
+            "disc-lr-decay": 0.1,
+            "gen-lr-decay": 0.1,
+            "lr-decay-period": 4,
+            "linear-gaussian-noise-range": [
+                0.5,
+                0.05
+            ]
+        },
+        "generated-images-folder": "generated_images/3",
+        "plots": "plots/3.png",
+        "models": "models/3"
+    },
+    "4": {
+        "hyperparameters": {
+            "optimizer": "Adam ",
+            "loss-function": "BCELoss",
+            "epochs": 40,
+            "batch-size": 256,
+            "disc-lr": 0.0005,
+            "gen-lr": 0.0005,
+            "disc-lr-decay": 0.2,
+            "gen-lr-decay": 0.2,
+            "lr-decay-period": 8,
+            "linear-gaussian-noise-range": [
+                0.5,
+                0.05
+            ]
+        },
+        "generated-images-folder": "generated_images/4",
+        "plots": "plots/4.png",
+        "models": "models/4"
+    },
+    "5": {
+        "hyperparameters": {
+            "optimizer": "Adam ",
+            "loss-function": "BCELoss",
+            "epochs": 40,
+            "batch-size": 256,
+            "disc-lr": 0.0005,
+            "gen-lr": 0.0005,
+            "disc-lr-decay": 0.2,
+            "gen-lr-decay": 0.2,
+            "lr-decay-period": 8,
+            "linear-gaussian-noise-range": [
+                0.5,
+                0.05
+            ]
+        },
+        "generated-images-folder": "generated_images/5",
+        "plots": "plots/5.png",
+        "models": "models/5"
+    },
+    "6": {
+        "hyperparameters": {
+            "optimizer": "Adam ",
+            "loss-function": "BCELoss",
+            "epochs": 17,
+            "batch-size": 256,
+            "disc-lr": 0.0005,
+            "gen-lr": 0.0005,
+            "disc-lr-decay": 0.2,
+            "gen-lr-decay": 0.2,
+            "lr-decay-period": 6,
+            "linear-gaussian-noise-range": [
+                0.5,
+                0.05
+            ]
+        },
+        "generated-images-folder": "generated_images/6",
+        "plots": "plots/6.png",
+        "models": "models/6"
+    },
+    "7": {
+        "hyperparameters": {
+            "optimizer": "Adam ",
+            "loss-function": "BCELoss",
+            "epochs": 23,
+            "batch-size": 256,
+            "disc-lr": 0.0005,
+            "gen-lr": 0.0005,
+            "disc-lr-decay": 0.2,
+            "gen-lr-decay": 0.2,
+            "lr-decay-period": 6,
+            "linear-gaussian-noise-range": [
+                0.6,
+                0.075
+            ]
+        },
+        "generated-images-folder": "generated_images/7",
+        "plots": "plots/7.png",
+        "models": "models/7"
+    },
+    "8": {
+        "hyperparameters": {
+            "optimizer": "Adam ",
+            "loss-function": "BCELoss",
+            "epochs": 35,
+            "batch-size": 256,
+            "disc-lr": 0.0005,
+            "gen-lr": 0.0005,
+            "disc-lr-decay": 0.2,
+            "gen-lr-decay": 0.2,
+            "lr-decay-period": 6,
+            "linear-gaussian-noise-range": [
+                0.5,
+                0.05
+            ]
+        },
+        "generated-images-folder": "generated_images/8",
+        "plots": "plots/8.png",
+        "models": "models/8"
+    }
+}
