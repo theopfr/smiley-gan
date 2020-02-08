@@ -1,4 +1,4 @@
-# generative adversial network
+# generative adversarial network
 
 ### implemented in Pytorch
 
