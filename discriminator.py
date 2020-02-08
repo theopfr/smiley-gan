@@ -34,19 +34,19 @@ class Discriminator(nn.Module):
         x = self._gaussian_noise_layer(x, gaussian_noise_rate=gaussian_noise_rate)
 
         # convolutional layer
-        x = F.leaky_relu(self.conv1(x))
+        x = F.leaky_relu(self.conv1(x), 0.2, inplace=True)
         x = self.batchnorm1(x)
         # print(x.shape)
 
-        x = F.leaky_relu(self.conv2(x))
+        x = F.leaky_relu(self.conv2(x), 0.2, inplace=True)
         x = self.batchnorm2(x)
         # print(x.shape)
 
-        x = F.leaky_relu(self.conv3(x))
+        x = F.leaky_relu(self.conv3(x), 0.2, inplace=True)
         x = self.batchnorm3(x)
         # print(x.shape)
 
-        x = F.leaky_relu(self.conv4(x))
+        x = F.leaky_relu(self.conv4(x), 0.2, inplace=True)
         x = self.batchnorm4(x)
         # print(x.shape)
 

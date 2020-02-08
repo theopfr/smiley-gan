@@ -12,12 +12,16 @@ class Generator(nn.Module):
 
         self.deconv1 = nn.ConvTranspose2d(100, 512, kernel_size=(4,4), stride=(1,1))
         self.batchnorm1 = nn.BatchNorm2d(512)
+
         self.deconv2 = nn.ConvTranspose2d(512, 256, kernel_size=(4,4), stride=(1,1), padding=(1,1))
         self.batchnorm2 = nn.BatchNorm2d(256)
+
         self.deconv3 = nn.ConvTranspose2d(256, 128, kernel_size=(4,4), stride=(2,2), padding=(1,1))
         self.batchnorm3 = nn.BatchNorm2d(128)
+
         self.deconv4 = nn.ConvTranspose2d(128, 64, kernel_size=(2,2), stride=(2,2), padding=(2,2))
         self.batchnorm4 = nn.BatchNorm2d(64)
+        
         self.deconv5 = nn.ConvTranspose2d(64, 1, kernel_size=(2,2), stride=(2,2), padding=(2,2))
 
     def forward(self, x):

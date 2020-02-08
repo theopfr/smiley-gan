@@ -105,8 +105,8 @@ class RunGAN:
         criterion_disc = nn.BCELoss()
         criterion_gen = nn.BCELoss()
 
-        optimizer_disc = torch.optim.Adam(self.discriminator.parameters(), lr=self.disc_lr)
-        optimizer_gen = torch.optim.Adam(self.generator.parameters(), lr=self.gen_lr)
+        optimizer_disc = torch.optim.Adam(self.discriminator.parameters(), lr=self.disc_lr, betas=(0.5, 0.999))
+        optimizer_gen = torch.optim.Adam(self.generator.parameters(), lr=self.gen_lr, betas=(0.5, 0.999))
 
         """ create benchmark """
         self.benchmark_logger.create_entry(self.benchmark_id, optimizer_disc, criterion_disc, self.epochs, self.batch_size, self.disc_lr, self.gen_lr, self.disc_lr_decay, self.gen_lr_decay, self.lr_decay_period, self.gaussian_noise_range)
@@ -142,7 +142,7 @@ class RunGAN:
 
                 loss_fake.backward(retain_graph=True)
 
-                if iteration % 10 == 0:
+                if iteration % 1 == 0:
                     optimizer_disc.step()
 
                 # save losses
@@ -163,7 +163,7 @@ class RunGAN:
                 epoch_loss_gen.append(loss_gen.item())
     
 
-            """ gaussian noise decay for disc. inputs """
+            """ linear gaussian noise decay for disc. inputs """
             noise_rate = np.linspace(self.gaussian_noise_range[0], self.gaussian_noise_range[1], self.epochs)[epoch]
 
 
@@ -219,8 +219,8 @@ if __name__ == "__main__":
     runGAN = RunGAN(doodle_dataset,
                     epochs=35,
                     batch_size=256,
-                    disc_lr=0.0005,
-                    gen_lr=0.0005,
+                    disc_lr=0.0002,
+                    gen_lr=0.0002,
                     disc_lr_decay=0.2,
                     gen_lr_decay=0.2,
                     lr_decay_period=6,

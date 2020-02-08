@@ -158,5 +158,45 @@
         "generated-images-folder": "generated_images/8",
         "plots": "plots/8.png",
         "models": "models/8"
+    },
+    "9": {
+        "hyperparameters": {
+            "optimizer": "Adam ",
+            "loss-function": "BCELoss",
+            "epochs": 35,
+            "batch-size": 256,
+            "disc-lr": 0.0005,
+            "gen-lr": 0.0005,
+            "disc-lr-decay": 0.2,
+            "gen-lr-decay": 0.2,
+            "lr-decay-period": 6,
+            "linear-gaussian-noise-range": [
+                0.5,
+                0.05
+            ]
+        },
+        "generated-images-folder": "generated_images/9",
+        "plots": "plots/9.png",
+        "models": "models/9"
+    },
+    "10": {
+        "hyperparameters": {
+            "optimizer": "Adam ",
+            "loss-function": "BCELoss",
+            "epochs": 35,
+            "batch-size": 256,
+            "disc-lr": 0.0002,
+            "gen-lr": 0.0002,
+            "disc-lr-decay": 0.2,
+            "gen-lr-decay": 0.2,
+            "lr-decay-period": 6,
+            "linear-gaussian-noise-range": [
+                0.5,
+                0.05
+            ]
+        },
+        "generated-images-folder": "generated_images/10",
+        "plots": "plots/10.png",
+        "models": "models/10"
     }
 }
